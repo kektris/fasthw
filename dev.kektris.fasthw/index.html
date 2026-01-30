@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>FastHW</title>
+    <meta charset="utf-8">
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Находим элемент div по ID
+    const uaElement = document.getElementById('ua');
+    
+    // Если элемент существует, записываем в него UserAgent
+    if (uaElement) {
+        uaElement.textContent = navigator.userAgent;
+    } else {
+        console.error('Элемент с ID "ua" не найден на странице');
+    }
+});
+
+    </script>
+</head>
+<body>
+<h1 style="text-align: center;">FastHW</h1>
+<p>UserAgent:</p><div id="ua" style="width: auto;"></div>
+</body>
